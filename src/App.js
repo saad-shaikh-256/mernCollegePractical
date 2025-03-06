@@ -1,6 +1,4 @@
 import "./App.css";
-import Student from "./component/Student";
-// import Counter from "./component/Counter";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Calculator from "./component/calculator";
 import Form2 from "./component/Form2";
@@ -11,6 +9,7 @@ import Header from "./Pages/Header";
 import Home from "./Pages/Home";
 import Footer from "./Pages/Footer";
 import Table from "./Pages/Table";
+import Counter from "./Pages/Counter";
 
 function App() {
   const studentMarks = [
@@ -68,21 +67,10 @@ function App() {
             path="/table"
             element={<Table studentMarks={studentMarks} />}
           ></Route>
+          <Route path="/counter" Component={Counter}></Route>
         </Routes>
-
-        {/*
-        <Routes>
-
-          <Route
-            path="/student"
-            // element={<Student studentMarks={studentMarks} />}
-          ></Route>
-        </Routes>
-      <Footer/> */}
-        {/* <Counter/> */}
         {/* <Form/> */}
         {/* <Form2 /> */}
-        {/* <Table /> */}
         {/* <Calculator /> */}
         <Footer />
       </BrowserRouter>

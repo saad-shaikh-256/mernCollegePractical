@@ -1,5 +1,5 @@
 import React from "react";
-import "./Table.css";
+import "./CSS/Table.css";
 
 const Table = (props) => {
   const studentMark = props.studentMarks;

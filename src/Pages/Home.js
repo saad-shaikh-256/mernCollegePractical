@@ -1,7 +1,7 @@
 import React from 'react'
 
 // CSS
-import "./Home.css"
+import "./CSS/Home.css";
 
 const Home = () => {
   return (

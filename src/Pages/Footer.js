@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Links } from "react-router-dom";
 
 // CSS
-import "./Footer.css"
+import "./CSS/Footer.css"
 
 const Footer = () => {
   return (
@@ -26,9 +26,9 @@ const Footer = () => {
                 {" "}
                 Table{" "}
               </Link>
-              <Link to={"/"} class="centerLink">
+              <Link to={"/counter"} class="centerLink">
                 {" "}
-                Day-3{" "}
+                Counter{" "}
               </Link>
               <Link to={"/"} class="centerLink">
                 {" "}

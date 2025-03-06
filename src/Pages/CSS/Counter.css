@@ -1,0 +1,103 @@
+@import url("https: //fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+   --primary-color: #6e6cdf;
+   --white-color: #ffffff;
+   --black-color: #212121;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: 0.5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: var(--white-color);
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
+}
+
+.Container {
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+.Counter {
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1.5px solid #d4d4d4;
+   padding: 24px 32px;
+   border-radius: 24px;
+   flex-direction: column;
+   gap: 1.5rem;
+
+   span {
+      font-size: 1.4rem;
+      font-weight: 500;
+   }
+}
+
+.Action {
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   gap: 2rem;
+
+   div {
+      font-size: 1.4rem;
+      font-weight: 500;
+   }
+
+   button {
+      all: unset;
+      transition: 0.5s;
+      cursor: pointer;
+      height: fit-content;
+      width: fit-content;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--white-color);
+      background-color: var(--black-color);
+   }
+}
+
+.Reset {
+   all: unset;
+   transition: 0.5s;
+   cursor: pointer;
+   height: fit-content;
+   width: 100%;
+   padding: 8px 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 12px;
+   font-weight: 500;
+   font-size: 1rem;
+   color: var(--white-color);
+   background-color: var(--primary-color);
+}
