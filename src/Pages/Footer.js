@@ -1,75 +1,50 @@
 import React from "react";
-import { Link, Links } from "react-router-dom";
-
-// CSS
-import "./CSS/Footer.css"
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"; // Importing Bootstrap CSS
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
-        <div class="upperContainer">
-          <div class="leftColumn">
-            Designed by
-            <a href="https://www.linkedin.com/in/saad-shaikh256/">
-              Saad Shaikh
-            </a>
-          </div>
-          <div class="centerColumn">
-            <h1>Quick Links</h1>
-            <div class="Links">
-              <Link to={"/"} class="centerLink">
-                {" "}
-                Home{" "}
-              </Link>
-              <Link to={"/table"} class="centerLink">
-                {" "}
-                Table{" "}
-              </Link>
-              <Link to={"/counter"} class="centerLink">
-                {" "}
-                Counter{" "}
-              </Link>
-              <Link to={"/"} class="centerLink">
-                {" "}
-                Day-4{" "}
-              </Link>
+    <footer className=" text-white py-4" style={{ backgroundColor: "#6e6cdf" }}>
+      <div className="container">
+        <div className="row">
+
+          <div className="col-md-4 d-flex flex-column align-items-center mb-4">
+            <h5 className="fs-6">Quick Links</h5>
+            <div className="d-flex flex-column">
+              <Link to="/" className="text-white mb-2 fs-6 text-decoration-none">Home</Link>
+              <Link to="/table" className="text-white mb-2 fs-6 text-decoration-none">Table</Link>
+              <Link to="/counter" className="text-white mb-2 fs-6 text-decoration-none">Counter</Link>
+              <Link to="/calculator" className="text-white mb-2 fs-6 text-decoration-none">Calculator</Link>
             </div>
           </div>
-          <div class="centerColumn">
-            <h1>Quick Links</h1>
-            <div class="Links">
-              <Link to={"/"} class="centerLink">
-                {" "}
-                Home{" "}
-              </Link>
-              <Link to={"/"} class="centerLink">
-                {" "}
-                Table{" "}
-              </Link>
-              <Link to={"/"} class="centerLink">
-                {" "}
-                Day-3{" "}
-              </Link>
-              <Link to={"/"} class="centerLink">
-                {" "}
-                Day-4{" "}
-              </Link>
+
+          <div className="col-md-4 d-flex flex-column align-items-center mb-4">
+            <h5 className="fs-6">Quick Links</h5>
+            <div className="d-flex flex-column">
+              <Link to="/" className="text-white mb-2 fs-6 text-decoration-none">Home</Link>
+              <Link to="/table" className="text-white mb-2 fs-6 text-decoration-none">Table</Link>
+              <Link to="/counter" className="text-white mb-2 fs-6 text-decoration-none">Counter</Link>
+              <Link to="/calculator" className="text-white mb-2 fs-6 text-decoration-none">Calculator</Link>
             </div>
           </div>
-          <div class="rightColumn">
-            <h1>Connect with Me</h1>
-            <div class="rightLink">
-              <a href="">linkedin</a>
-              <a href="">Github</a>
+
+          <div className="col-md-4 d-flex flex-column align-items-center mb-4">
+            <h5 className="fs-6">Quick Links</h5>
+            <div className="d-flex flex-column">
+              <Link to="/" className="text-white mb-2 fs-6 text-decoration-none">Home</Link>
+              <Link to="/table" className="text-white mb-2 fs-6 text-decoration-none">Table</Link>
+              <Link to="/counter" className="text-white mb-2 fs-6 text-decoration-none">Counter</Link>
+              <Link to="/calculator" className="text-white mb-2 fs-6 text-decoration-none">Calculator</Link>
             </div>
           </div>
+
         </div>
-        <div class="bottomContainer">
-          <h1>Copyright © 2025 My Website. All rights reserved.</h1>
-        </div>
-      </footer>
-    </div>
+      </div>
+
+      <div className="text-center py-2 mt-4">
+        <p className="mb-0 fs-6">Copyright © 2025 My Website. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 

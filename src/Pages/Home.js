@@ -1,14 +1,13 @@
-import React from 'react'
-
-// CSS
-import "./CSS/Home.css";
+import React from 'react';
 
 const Home = () => {
   return (
-     <div>
-        <span class="Heading">Welcome Saad</span>
+    <div className="container-fluid min-vh-100 w-100 d-flex justify-content-center align-items-center">
+      <h1 className="text-center" style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: '26px' }}>
+        Welcome Saad
+      </h1>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
