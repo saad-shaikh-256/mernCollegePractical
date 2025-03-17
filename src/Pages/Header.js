@@ -16,12 +16,12 @@ const Header = () => {
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to={"/"} className="nav-link text-black" style={{ opacity: 0.8, fontSize: "1rem" }}>
-                  Home
+                <Link to={"/table"} className="nav-link text-black" style={{ opacity: 0.8, fontSize: "1rem" }}>
+                  Table
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/localstorage"} className="nav-link text-black" style={{ opacity: 0.8, fontSize: "1rem" }}>
+                <Link to={"/localStorage"} className="nav-link text-black" style={{ opacity: 0.8, fontSize: "1rem" }}>
                   localStorage
                 </Link>
               </li>

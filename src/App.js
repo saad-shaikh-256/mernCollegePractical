@@ -1,20 +1,24 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Form2 from "./component/Form2";
-// import Form from "./component/Form";
-// import FormValidation from "./component/FormValidation";
-import Lstoreage from "./component/Lstoreage";
-// import demo from "./component/demo";
-import Display from "./component/Display";
+import useEffectDemo from "./Component/useEffectDemo";
 
 // Importing Components
 import Header from "./Pages/Header";
+  
 import Home from "./Pages/Home";
 import Table from "./Pages/Table";
 import Counter from "./Pages/Counter";
 import Calculator from "./Pages/Calculator";
-// import Form from "./Pages/Form";
+import Form from "./Pages/Form";
+import FormValidation from "./Pages/FormValidation";
+import LocStorage from "./Pages/LocStorage";
+import ShowLocalData from "./Pages/ShowLocalData";
+
+
 import Footer from "./Pages/Footer";
+import Parent from "./Component/Parent";
+import useMemoDemo from "./Component/useMemoDemo";
+import useMemoPractical from "./Component/useMemoPractical";
 
 function App() {
   const studentMarks = [
@@ -66,27 +70,30 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <demo />
+
         <Routes>
+          <Route path="/useMemoDemo" Component={useMemoDemo}></Route>
+          <Route path="/useMemoPractical" Component={useMemoPractical}></Route>
+          <Route path="/useEffectDemo" Component={useEffectDemo}></Route>
+          <Route path="/userContext" Component={Parent}></Route>
+
+
           <Route path="/" Component={Home}></Route>
-          <Route path="/localstorage" Component={Lstoreage}></Route>
-          <Route
-            path="/table"
-            element={<Table studentMarks={studentMarks} />}
-          ></Route>
-          <Route
-            path="/display"
-            element={<Display />}
-          ></Route>
+          <Route path="/table" element={<Table studentMarks={studentMarks} />}></Route>
           <Route path="/counter" Component={Counter}></Route>
           <Route path="/calculator" Component={Calculator}></Route>
-        </Routes>
-        {/* <FormValidation /> */}
+          <Route path="/calculator" Component={Calculator}></Route>
+          <Route path="/form" Component={Form}></Route>
+          <Route path="/formValidation" Component={FormValidation}></Route>
+          <Route path="/localStorage" Component={LocStorage}></Route>
+          <Route path="/showLocalData" Component={ShowLocalData}></Route>
 
-        {/* <Form/> */}
-        {/* <Form2 /> */}
+
+
+        </Routes>
         <Footer />
       </BrowserRouter>
+
     </>
   );
 }
